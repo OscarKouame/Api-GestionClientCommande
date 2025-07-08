@@ -92,7 +92,7 @@ payload
 🔹 6. Lister les commandes d un client
 GET http://localhost:8081/api/clients/1/orders
 
-🔹 7. Détail d'une commande
+🔹 7. Détail d une commande
 GET http://localhost:8081/api/orders/1
 
 🔹 8. Supprimer une commande
