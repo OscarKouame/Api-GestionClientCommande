@@ -26,7 +26,7 @@ src/
 └── test/                           # Tests unitaires et d’intégration
 
 
-🛠️ Configuration de la base de données et de l'application
+🛠️ Configuration de la base de données et de l application
 Fichier : src/main/resources/application.properties
 
 # Nom de l’application
@@ -64,7 +64,7 @@ Une collection Postman est disponible dans le dossier docs/ :
 🔹 1. Créer un client
 POST http://localhost:8081/api/clients
 
-json
+payload
 {
   "email": "shulmers@hotmail.fr",
   "firstName": "Toto",
@@ -74,16 +74,8 @@ json
 🔹 2. Lister tous les clients
 GET http://localhost:8081/api/clients
 
-
 🔹 3. Récupérer un client par ID
 GET http://localhost:8081/api/clients/1
-
-json
-{
-  "email": "shulmers@hotmail.fr",
-  "firstName": "Toto",
-  "lastName": "Tata"
-}
 
 🔹 4. Supprimer un client
 DELETE http://localhost:8081/api/clients/1
@@ -91,13 +83,13 @@ DELETE http://localhost:8081/api/clients/1
 🔹 5. Créer une commande pour un client
 POST http://localhost:8081/api/clients/1/orders
 
-json
+payload
 {
   "amount": 2000,
   "description": "Commande Imprimante"
 }
 
-🔹 6. Lister les commandes d’un client
+🔹 6. Lister les commandes d un client
 GET http://localhost:8081/api/clients/1/orders
 
 🔹 7. Détail d'une commande
