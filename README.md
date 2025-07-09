@@ -43,6 +43,8 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
+# Définition du port HTTP de l application
+server.port=8081
 
 # Définition du chemin de base (context path) pour toutes les routes REST
 # Toutes les URLs exposées par les contrôleurs commenceront par /api
