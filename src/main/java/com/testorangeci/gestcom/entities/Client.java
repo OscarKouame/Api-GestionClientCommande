@@ -1,12 +1,19 @@
 package com.testorangeci.gestcom.entities;
 
-import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.List;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.GenerationType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-import java.util.List;
+
  @Entity
  @Data @NoArgsConstructor @AllArgsConstructor
 public class Client {
@@ -16,7 +23,7 @@ public class Client {
     private String firstName;
     private String lastName;
     private String email;
-    private Date createAt;
+    private LocalDateTime createAt;
     @OneToMany(mappedBy = "client")
     private List<Order> orders;
 

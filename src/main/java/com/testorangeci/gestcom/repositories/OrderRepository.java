@@ -1,7 +1,8 @@
 package com.testorangeci.gestcom.repositories;
 
-import com.testorangeci.gestcom.entities.Order;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.testorangeci.gestcom.entities.Order;
 
 import java.util.List;
 

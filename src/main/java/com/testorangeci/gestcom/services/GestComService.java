@@ -1,10 +1,10 @@
 package com.testorangeci.gestcom.services;
 
+import java.util.List;
 import com.testorangeci.gestcom.dtos.ClientDTO;
 import com.testorangeci.gestcom.dtos.HistoriqueOrdersByClientDTO;
 import com.testorangeci.gestcom.dtos.OrderDTO;
 
-import java.util.List;
 
 public interface GestComService {
 
