@@ -1,5 +1,6 @@
 package com.testorangeci.gestcom.controller;
 
+import com.testorangeci.gestcom.dtos.ClientDTO;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -64,4 +65,6 @@ public class OrderController {
     public ResponseEntity<String> deleteOrderById(@PathVariable Long id){
         return ResponseEntity.ok(gestComService.deleteOrderById(id));
     }
+
+
 }
