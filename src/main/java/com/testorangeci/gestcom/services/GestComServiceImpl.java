@@ -2,10 +2,10 @@ package com.testorangeci.gestcom.services;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import java.util.stream.Collectors;
 import com.testorangeci.gestcom.Exceptions.ClientNotFoundExeption;
 import com.testorangeci.gestcom.Exceptions.OrderNotFoundExeption;
 import com.testorangeci.gestcom.dtos.ClientDTO;
@@ -34,7 +34,7 @@ public class GestComServiceImpl implements GestComService {
      * Enregistre un nouveau client à partir d'un DTO.
      *
      * @param clientDTO les informations du client à sauvegarder
-     * @return le client enregistré avec son identifiant généré
+     * @return le client enregistré sous forme de DTO
      */
     @Override
     public ClientDTO saveClient(ClientDTO clientDTO) {
